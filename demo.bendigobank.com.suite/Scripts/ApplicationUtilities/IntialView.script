@@ -1,0 +1,41 @@
+﻿to account
+	"CommonUtilities/Core".navigate "Accounts", "Activity", "", "sideMenu", "mainMenu"
+	Log "Accounts Tab is opened."
+	"CommonUtilities/CustomCore".captureScreenShot Param(0)
+end account
+
+to moveMoney
+	"CommonUtilities/Core".navigate "Move Money", "Account Transfer", "", "sideMenu", "mainMenu"
+	Log "Move Money Tab is opened."
+	"CommonUtilities/CustomCore".captureScreenShot Param(0)
+end moveMoney
+
+to activity
+	"CommonUtilities/Core".navigate "Activity", "Upcoming", "", "sideMenu", "mainMenu"
+	Log "Activity Tab is opened."
+	"CommonUtilities/CustomCore".captureScreenShot Param(0)	
+end activity
+
+to contacts
+	"CommonUtilities/Core".navigate "Contacts", "Pay Anyone", "", "sideMenu", "mainMenu"
+	Log "Contacts Tab is opened."
+	"CommonUtilities/CustomCore".captureScreenShot Param(0)
+end contacts
+
+to cards
+	"CommonUtilities/Core".navigate "Cards", "Can't see your card", "", "sideMenu", "mainMenu"
+	Log "Cards Tab is opened."
+	"CommonUtilities/CustomCore".captureScreenShot Param(0)
+end cards
+
+to settings
+	"CommonUtilities/Core".navigate "Settings", "Display settings", "", "sideMenu", "mainMenu"
+	Log "Settings Tab is opened."
+	"CommonUtilities/CustomCore".captureScreenShot Param(0)
+end settings
+
+to logout
+	"CommonUtilities/Core".navigate "Log Out", "Launch Business Demo", "", "sideMenu", "signinMenu"
+	Log "Logout Tab is opened."
+	"CommonUtilities/CustomCore".captureScreenShot Param(0)
+end logout

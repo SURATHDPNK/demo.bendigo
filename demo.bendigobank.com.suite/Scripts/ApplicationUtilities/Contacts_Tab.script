@@ -1,0 +1,43 @@
+﻿to allContacts
+	"CommonUtilities/Core".navigate "Contacts"
+	wait 2
+	"CommonUtilities/Core".navigate "All", "", "", "mainMenu", "mainMenu"
+	wait 1
+	"CommonUtilities/CustomCore".captureScreenShot Param(0)
+end allContacts
+
+to payAnyone
+	"CommonUtilities/Core".navigate "Pay Anyone", "", "", "mainMenu", "mainMenu"
+wait 1
+	"CommonUtilities/CustomCore".captureScreenShot Param(0)
+end payAnyone
+
+to bpay
+	"CommonUtilities/Core".navigate "BPAY", "Search contacts", "", "mainMenu", "mainMenu"
+	"CommonUtilities/CustomCore".captureScreenShot Param(0)
+end bpay
+
+to bpayView
+	"CommonUtilities/Core".navigate "BPAY View", "Search contacts", "", "mainMenu", "mainMenu"
+	"CommonUtilities/CustomCore".captureScreenShot Param(0)
+end bpayView
+
+to TT
+	"CommonUtilities/Core".navigate "TT", "Search contacts", "", "mainMenu", "mainMenu"
+	"CommonUtilities/CustomCore".captureScreenShot Param(0)
+end TT
+
+to payTo
+	"CommonUtilities/Core".navigate "PayTo", "Search contacts", "", "mainMenu", "mainMenu"
+	"CommonUtilities/CustomCore".captureScreenShot Param(0)
+end payTo
+
+to addContact
+	"CommonUtilities/Core".navigate "addContact", "", "", "mainMenu", "mainMenu"
+	"CommonUtilities/CustomCore".captureScreenShot Param(0)
+end addContact
+
+to downloadContacts
+	"CommonUtilities/Core".navigate "Download contacts", "", "", "mainMenu", "mainMenu"
+	"CommonUtilities/CustomCore".captureScreenShot Param(0)
+end downloadContacts

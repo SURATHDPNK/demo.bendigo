@@ -1,0 +1,30 @@
+﻿to getActivityOfAccount accountName
+	if ImageFound(text:"recently added new accounts", waitFor:15, SearchRectangle:"CommonUtilities/Config"().("mainMenu")) then "CommonUtilities/Core".navigate "No", "", "", "mainMenu", "mainMenu"
+	"CommonUtilities/Core".navigate accountName, "accountSelected", "", "mainMenu", "mainMenu"
+	"CommonUtilities/CustomCore".captureScreenShot Param(0)
+	Log "Account is selected."
+	"CommonUtilities/Core".navigate "Continue", "Interest & Charges", "", "mainMenu", "mainMenu"
+	"CommonUtilities/CustomCore".captureScreenShot Param(0)
+end getActivityOfAccount
+
+to pastActivity
+	if ImageFound(text:"recently added new accounts", waitFor:15, SearchRectangle:"CommonUtilities/Config"().("mainMenu")) then "CommonUtilities/Core".navigate "No", "", "", "mainMenu", "mainMenu"
+	"CommonUtilities/Core".navigate "Past", "Filter", "", "mainMenu", "mainMenu"
+	Log "Past activity tab is opened."
+	"CommonUtilities/CustomCore".captureScreenShot Param(0)
+end pastActivity
+
+to upcomingActivity
+	"CommonUtilities/Core".navigate "Activity"
+	"CommonUtilities/Core".navigate "Upcoming", , "", "mainMenu", "mainMenu"
+	--"CommonUtilities/Core".navigate "Upcoming",  uppercase(the monthname), "", "mainMenu", "mainMenu"
+	wait 0.5
+	Log "Upcoming activity tab is opened."
+	"CommonUtilities/CustomCore".captureScreenShot Param(0)
+end upcomingActivity
+
+to interestAndCharges
+	"CommonUtilities/Core".navigate "Interest & Charges", "", "", "mainMenu", "mainMenu"
+	Log "Interest & Charges activity tab is opened."
+	"CommonUtilities/CustomCore".captureScreenShot Param(0)
+end interestAndCharges

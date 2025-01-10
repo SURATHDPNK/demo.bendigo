@@ -1,0 +1,59 @@
+﻿to select_Account_to_View_Graph accountName
+	"CommonUtilities/Core".navigate accountName, "Activity", "", "mainMenu", "mainMenu"
+	"CommonUtilities/CustomCore".captureScreenShot Param(0)
+end select_Account_to_View_Graph
+
+to view_Graph
+	put ReadText(SearchRectangle:"CommonUtilities/Config"().("graphArea")) into graphData
+	Log graphData
+end view_Graph
+
+to printAccountList
+	"CommonUtilities/Core".navigate "Print Account List", "Cancel", "", "mainMenu", "mainMenu"
+	"CommonUtilities/CustomCore".captureScreenShot Param(0)
+end printAccountList
+
+to activity
+	"CommonUtilities/Core".navigate "Activity", "Download", "", "mainMenu", "mainMenu"
+	"CommonUtilities/CustomCore".captureScreenShot Param(0)
+end activity
+
+to upcoming
+	"CommonUtilities/Core".navigate "Upcoming", uppercase(the monthname), "", "mainMenu", "mainMenu"
+	"CommonUtilities/CustomCore".captureScreenShot Param(0)
+end upcoming
+
+to details
+	"CommonUtilities/Core".navigate "Details", "Account Overview", "", "mainMenu", "mainMenu"
+	"CommonUtilities/CustomCore".captureScreenShot Param(0)
+end details
+
+to statements
+	"CommonUtilities/Core".navigate "Statements", "2014", "", "mainMenu", "mainMenu"
+	"CommonUtilities/CustomCore".captureScreenShot Param(0)
+end statements
+
+to selectOptionOnPrintWindow option
+	"CommonUtilities/Core".navigate option, "", "", "default", "default"
+	"CommonUtilities/CustomCore".captureScreenShot Param(0)
+end selectOptionOnPrintWindow
+
+to cancelthePrint
+	selectOptionOnPrintWindow "Cancel"
+end cancelthePrint
+
+to printthePrint
+	selectOptionOnPrintWindow "Print"
+end printthePrint
+
+to selectPrintOptions
+	Log "Selecting the Printing Options"
+end selectPrintOptions
+
+
+
+
+
+
+
+

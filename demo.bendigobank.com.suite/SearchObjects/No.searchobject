@@ -1,0 +1,48 @@
+{
+	"originalcapturelocation": [
+		850,
+		615,
+		66,
+		30
+	],
+	"lastmodifieddate": 1729657230.1919999,
+	"createddate": 1729656710.79,
+	"name": "No",
+	"lastfounddate": 1729659514.7059999,
+	"ocrcapturestring": "X NO",
+	"lastfoundlocation": [
+		853,
+		617,
+		55,
+		22
+	],
+	"testlocationdata": [
+		{
+				"connectionportnum": 3389,
+				"properties": {
+					"CropRectangle": "[0,0,0,0]",
+					"Rotate": 0,
+					"Scale": "    1",
+					"HotSpot": "[33,15]",
+					"Tolerance": "_45",
+					"Discrepancy": "_0",
+					"SearchType": "Tolerant of Background"
+				},
+				"sutinfo": {
+					"type": "Unknown RDP"
+				},
+				"name": "No.png",
+				"connectionname": "IB-171",
+				"type": 1,
+				"connectionserverid": "192.168.1.171",
+				"capturerect": [
+					850,
+					615,
+					66,
+					30
+				],
+				"connectiontype": "RDP",
+				"capturedocrtext": "X NO"
+			}
+	]
+}

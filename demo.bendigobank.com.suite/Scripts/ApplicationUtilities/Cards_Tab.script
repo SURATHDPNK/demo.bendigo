@@ -1,0 +1,18 @@
+﻿to fillCardDetails
+	"CommonUtilities/Core".textEntry "Enter your CVC", "000", ""
+	"CommonUtilities/Core".textEntry "Choose PIN for your Card", "1234", ""
+	"CommonUtilities/Core".textEntry "Re-enter PIN", "1234", ""
+	"CommonUtilities/CustomCore".captureScreenShot Param(0)
+end fillCardDetails
+
+to cantseeyourcard
+	"CommonUtilities/Core".navigate "Can't see your card?", "Card Activation", "", "mainMenu", "mainMenu"
+	"CommonUtilities/CustomCore".captureScreenShot Param(0)
+end cantseeyourcard
+
+to activate
+	"CommonUtilities/Core".navigate "Activate", "", "", "mainMenu", "mainMenu"
+	"CommonUtilities/CustomCore".captureScreenShot Param(0)
+end activate
+
+

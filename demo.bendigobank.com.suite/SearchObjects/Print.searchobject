@@ -1,0 +1,41 @@
+{
+	"lastmodifieddate": 1729617269.944,
+	"ocrcapturestring": "Print",
+	"originalcapturelocation": [
+		1457,
+		896,
+		42,
+		21
+	],
+	"createddate": 1729617269.944,
+	"testlocationdata": [
+		{
+				"connectionportnum": 49775,
+				"properties": {
+					"CropRectangle": "[0,0,0,0]",
+					"Rotate": 0,
+					"Tolerance": "_72",
+					"HotSpot": "[21,10]",
+					"Scale": "    1",
+					"Discrepancy": "_0",
+					"SearchType": "Smoothed for Text"
+				},
+				"sutinfo": {
+					"type": "Unknown VNC"
+				},
+				"name": "Print.png",
+				"connectionname": "MySingleSystem",
+				"type": 1,
+				"connectionserverid": "127.0.0.1",
+				"capturerect": [
+					1457,
+					896,
+					42,
+					21
+				],
+				"connectiontype": "Single System",
+				"capturedocrtext": "Print"
+			}
+	],
+	"name": "Print"
+}

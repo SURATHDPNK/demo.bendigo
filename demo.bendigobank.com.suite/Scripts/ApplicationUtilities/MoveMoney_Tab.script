@@ -1,0 +1,24 @@
+﻿to accountTransfer
+	"CommonUtilities/Core".navigate "Account Transfer", "Transfer From", "", "mainMenu", "mainMenu"
+	"CommonUtilities/CustomCore".captureScreenShot Param(0)
+end accountTransfer
+
+to payBPAYBill
+	"CommonUtilities/Core".navigate "Pay a BPAY Bill", "Search contacts", "", "mainMenu", "mainMenu"
+	"CommonUtilities/CustomCore".captureScreenShot Param(0)
+end payBPAYBill
+
+to payAnyone
+	"CommonUtilities/Core".navigate "Pay Anyone", "Search contacts", "", "mainMenu", "mainMenu"
+	"CommonUtilities/CustomCore".captureScreenShot Param(0)
+end payAnyone
+
+to telegraphicTransfer
+	"CommonUtilities/Core".navigate "Telegraphic Transfer", "Search contacts", "", "mainMenu", "mainMenu"
+	"CommonUtilities/CustomCore".captureScreenShot Param(0)
+end telegraphicTransfer
+
+to bpayView
+	"CommonUtilities/Core".navigate "BPAY View", "Contacts", "", "mainMenu", "mainMenu"
+	"CommonUtilities/CustomCore".captureScreenShot Param(0)
+end bpayView

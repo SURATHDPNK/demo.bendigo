@@ -1,0 +1,48 @@
+{
+	"originalcapturelocation": [
+		11,
+		102,
+		46,
+		56
+	],
+	"lastmodifieddate": 1729575894.872,
+	"createddate": 1729575860.0469999,
+	"name": "bendigoBankLogo",
+	"lastfounddate": 1732614671.599,
+	"ocrcapturestring": "□",
+	"lastfoundlocation": [
+		18,
+		108,
+		28,
+		35
+	],
+	"testlocationdata": [
+		{
+				"connectionportnum": 3389,
+				"properties": {
+					"CropRectangle": "[0,0,0,0]",
+					"Rotate": 0,
+					"Scale": "    1",
+					"HotSpot": "[23,28]",
+					"Tolerance": "_45",
+					"Discrepancy": "_0",
+					"SearchType": "Tolerant of Background"
+				},
+				"sutinfo": {
+					"type": "Unknown RDP"
+				},
+				"name": "bendigoBankLogo.png",
+				"connectionname": "IB-171",
+				"type": 1,
+				"connectionserverid": "192.168.1.171",
+				"capturerect": [
+					11,
+					102,
+					46,
+					56
+				],
+				"connectiontype": "RDP",
+				"capturedocrtext": "□"
+			}
+	]
+}

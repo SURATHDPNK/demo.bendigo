@@ -1,0 +1,42 @@
+﻿-------------------------Using Excel as Worksheet--------------
+
+//reading Excel from Entire row
+to handle ExcelFileReadingEntirerow ExcelFileName,SheetNumber,RowNum
+	set MyExcelFile to Workbook(ResourcePath(ExcelFileName))
+	set MySheet to worksheet(MyExcelFile,SheetNumber)
+	put MySheet.cellRange (RowNum) into RowData
+	return RowData
+end ExcelFileReadingEntirerow
+
+
+//reading Excel data from a Particular Cell
+to handle ExcelFileReading ExcelFileName,SheetNumber,RowNum,ColNum
+	set MyExcelFile to Workbook(ResourcePath(ExcelFileName))
+	set MySheet to worksheet(MyExcelFile,SheetNumber)
+	return MySheet.cell(RowNum,ColNum)
+end ExcelFileReading
+
+
+//Write Excel data into a Particular Cell
+to handle WritingDataIntoCell ExcelFileName,SheetNumber,RowNum,ColNum,Data
+	set MyExcelFile to Workbook(ResourcePath(ExcelFileName))
+	set MySheet to worksheet(MyExcelFile,SheetNumber)
+	put Data into MySheet.cell(RowNum,ColNum)
+end WritingDataIntoCell
+
+
+//Update Excel data for a Particular Cell
+to handle UpdateCellData ExcelFileName,SheetNumber,RowNum,ColNum,Data
+	set MyExcelFile to Workbook(ResourcePath(ExcelFileName))
+	set MySheet to worksheet(MyExcelFile,SheetNumber)
+	put MySheet.cell(RowNum,ColNum)&& Data into MySheet.cell(RowNum,ColNum)
+	return MySheet.cell(RowNum,ColNum)
+end UpdateCellData
+
+
+//Delete Excel data from a Particular Cell
+to handle DeleteCellData ExcelFileName,SheetNumber,RowNum,ColNum
+	set MyExcelFile to Workbook(ResourcePath(ExcelFileName))
+	set MySheet to worksheet(MyExcelFile,SheetNumber)
+	put "" into MySheet.cell(RowNum,ColNum)
+end DeleteCellData

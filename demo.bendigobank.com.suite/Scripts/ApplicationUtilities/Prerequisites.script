@@ -1,0 +1,11 @@
+﻿# Function to launch the Demo Bendigo Bank application.
+to launchDemoBendigoBank
+	Run "DataHandlingUtilities/VariableData"
+	"CommonUtilities/Core".launchApplication Global browserName &&Global appPath, "bendigoBankLogo", "banner"
+	"CommonUtilities/CustomCore".captureScreenShot Param(0)
+end launchDemoBendigoBank
+
+
+to closeBrowser
+	TypeText altKey&f4
+end closeBrowser

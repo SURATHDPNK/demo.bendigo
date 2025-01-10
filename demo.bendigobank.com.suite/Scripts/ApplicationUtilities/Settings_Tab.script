@@ -1,0 +1,19 @@
+﻿to displaySettings
+	"CommonUtilities/Core".navigate "Display settings", "Normal", "", "mainMenu", "mainMenu"
+	"CommonUtilities/CustomCore".captureScreenShot Param(0)
+end displaySettings
+
+to reorderAccounts
+	"CommonUtilities/Core".navigate "Re-order accounts", "Configure the order", "", "mainMenu", "mainMenu"
+	"CommonUtilities/CustomCore".captureScreenShot Param(0)
+end reorderAccounts
+
+to hideshowaccounts
+	"CommonUtilities/Core".navigate "Hide/show accounts", "Account Visibility", "", "mainMenu", "mainMenu"
+	"CommonUtilities/CustomCore".captureScreenShot Param(0)
+end hideshowaccounts
+
+to hideshowCharts
+	"CommonUtilities/Core".navigate "Hide/show charts", "Chart Visibility", "", "mainMenu", "mainMenu"
+	"CommonUtilities/CustomCore".captureScreenShot Param(0)
+end hideshowCharts

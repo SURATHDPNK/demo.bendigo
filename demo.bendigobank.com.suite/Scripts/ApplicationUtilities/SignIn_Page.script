@@ -1,0 +1,30 @@
+﻿to launchPersonalDemo
+	"CommonUtilities/Core".navigate "Launch Personal Demo", "Move Money", "", "signinMenu", "sideMenu"
+	"CommonUtilities/CustomCore".captureScreenShot Param(0)
+end launchPersonalDemo
+
+to launchBusinessDemo
+	"ApplicationUtilities/Prerequisites".launchDemoBendigoBank
+	"CommonUtilities/Core".navigate "Launch Business Demo", "Move Money", "", "signinMenu", "sideMenu"
+	"CommonUtilities/CustomCore".captureScreenShot Param(0)
+end launchBusinessDemo
+
+to takeATour
+	"CommonUtilities/Core".navigate "Take a tour", "Interactive e-banking", "", "signinMenu", "signinMenu"
+	"CommonUtilities/CustomCore".captureScreenShot Param(0)
+end takeATour
+
+to register
+	"CommonUtilities/Core".navigate "Register", "About us", "", "signinMenu", "default"
+	"CommonUtilities/CustomCore".captureScreenShot Param(0)
+end register
+
+to onlineSupport
+	"CommonUtilities/Core".navigate "Online support", "e-banking support", "", "signinMenu", "default"
+	"CommonUtilities/CustomCore".captureScreenShot Param(0)
+end onlineSupport
+
+to bankingSecurely
+	"CommonUtilities/Core".navigate "Banking securely", "Contact us", "", "signinMenu", "default"
+	"CommonUtilities/CustomCore".captureScreenShot Param(0)
+end bankingSecurely

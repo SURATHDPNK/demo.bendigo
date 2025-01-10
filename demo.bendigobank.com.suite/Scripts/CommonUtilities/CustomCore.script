@@ -1,0 +1,86 @@
+﻿# To setting text style.
+to setTextstyle txtStyle
+	set properties to{
+		Default: empty,
+		GrayText:{contrastColor:[200,200,200], contrast:"On", contrastTolerance:"45"},
+		dpi144:{dpi:144},
+		csON:{caseSensitive:"yes"}
+	}	
+	try
+		set the TextStyle to properties.(txtStyle)
+	catch
+		Log txtStyle && "is not a recognized Style Properties."
+		set the TextStyle to empty
+	end try
+	return the TextStyle	
+end setTextstyle
+
+
+# To maintain all screenshots in one folder.
+to createScreenshotFolder
+	put the date into folderNameAsDate 
+	replace every occurrence of "/" with "" in folderNameAsDate 
+	if not folder ResourcePath("Screenshots"&"/"&folderNameAsDate) exists then create folder ResourcePath("Screenshots"&"/"&folderNameAsDate) 
+	return ResourcePath("Screenshots"&"/"&folderNameAsDate)
+end createScreenshotFolder
+
+
+# To capture screenshots.
+to captureScreenShot screenShotName
+	if (Universal screenShotFlag is "Yes") then
+		--CaptureScreen name:createScreenshotFolder()&"/"&screenShotName, increment:yes
+		CaptureScreen increment:yes
+	end if
+end captureScreenShot
+
+
+# To handle the sub-menus.
+to clickSubMenu menu, subMenu
+	"CommonUtilities/Core".hoverOn menu
+	waitforSpecificTime 0.5	
+	"CommonUtilities/Core".navigate subMenu
+end clickSubMenu
+
+
+# To waitfor image/text on the screen.
+to waitforElement pagewait, verifyObject, SR:"default"
+	if file (suiteinfo().imagesFolder&"/"&verifyObject&".png") exists or if folder (suiteinfo().imagesFolder&"/"&verifyObject) exists then
+		waitFor universal pagewait, image:verifyObject, SearchRectangle:"CommonUtilities/Config"().(SR)
+	else
+		waitFor universal pagewait, text:verifyObject, SearchRectangle:"CommonUtilities/Config"().(SR)
+	end if
+end waitforElement
+
+
+# To Perform click action on desired element.
+to clickDesiredElement  myObject, input
+	if file (suiteinfo().imagesFolder&"/"&validation&".png") exists or folder (suiteinfo().imagesFolder&"/"&validation) exists then
+		put EveryImageLocation(image:myObject) into myObjectLocs
+	else
+		put EveryImageLocation(text:myObject) into myObjectLocs
+	end if
+	"CommonUtilities/Core".clickAtLocation item input of myObjectLocs
+end clickDesiredElement
+
+
+# To Perform double click action on desired element.
+to doubleClickDesiredElement  myObject, input
+	if file (suiteinfo().imagesFolder&"/"&validation&".png") exists or folder (suiteinfo().imagesFolder&"/"&validation) exists then
+		put EveryImageLocation(image:myObject) into myObjectLocs
+	else
+		put EveryImageLocation(text:myObject) into myObjectLocs
+	end if
+	"CommonUtilities/Core".doubleClickAtLocation item input of myObjectLocs
+end doubleClickDesiredElement
+
+
+# To wait for Specific time.
+to waitforSpecificTime waitTime
+	wait waitTime
+end waitforSpecificTime
+
+
+# To set search area to specified area
+to setSearchArea SR
+	set the SearchRectangle to "CommonUtilities/Config"().(SR)
+end setSearchArea

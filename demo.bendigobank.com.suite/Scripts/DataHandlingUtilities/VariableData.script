@@ -1,0 +1,13 @@
+﻿Universal pagewait, screenShotFlag
+Global browserName, appPath
+
+// Environment Wait
+set pagewait to 90
+
+set browserName to "chrome"
+set appPath to "https://demo.bendigobank.com.au/"
+
+// Setting script messages to off
+set the ScriptLogging to off
+
+set screenShotFlag to "Yes"

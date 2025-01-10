@@ -1,0 +1,46 @@
+{
+	"lastmodifieddate": 1729581324.7880001,
+	"lastfoundlocation": [
+		864,
+		256,
+		22,
+		17
+	],
+	"originalcapturelocation": [
+		859,
+		252,
+		33,
+		25
+	],
+	"createddate": 1729581295.3860002,
+	"lastfounddate": 1729581329.2610002,
+	"testlocationdata": [
+		{
+				"connectionportnum": 3389,
+				"properties": {
+					"CropRectangle": "[0,0,0,0]",
+					"Rotate": 0,
+					"Scale": "    1",
+					"HotSpot": "[16,12]",
+					"Tolerance": "_45",
+					"Discrepancy": "_0",
+					"SearchType": "Tolerant of Background"
+				},
+				"sutinfo": {
+					"type": "Unknown RDP"
+				},
+				"name": "cardIcon.png",
+				"connectionname": "IB-171",
+				"type": 1,
+				"capturerect": [
+					859,
+					252,
+					33,
+					25
+				],
+				"connectiontype": "RDP",
+				"connectionserverid": "192.168.1.171"
+			}
+	],
+	"name": "cardIcon"
+}

@@ -1,0 +1,48 @@
+{
+	"originalcapturelocation": [
+		1441,
+		110,
+		23,
+		28
+	],
+	"lastmodifieddate": 1729580961.5089998,
+	"createddate": 1729577161.5549998,
+	"name": "addContacts",
+	"lastfounddate": 1729577197.1069999,
+	"ocrcapturestring": "-I-",
+	"lastfoundlocation": [
+		1444,
+		113,
+		17,
+		20
+	],
+	"testlocationdata": [
+		{
+				"connectionportnum": 3389,
+				"properties": {
+					"CropRectangle": "[0,0,0,0]",
+					"Rotate": 0,
+					"Scale": "    1",
+					"HotSpot": "[11,14]",
+					"Tolerance": "_45",
+					"Discrepancy": "_0",
+					"SearchType": "Tolerant of Background"
+				},
+				"sutinfo": {
+					"type": "Unknown RDP"
+				},
+				"name": "addContact.png",
+				"connectionname": "IB-171",
+				"type": 1,
+				"connectionserverid": "192.168.1.171",
+				"capturerect": [
+					1441,
+					110,
+					23,
+					28
+				],
+				"connectiontype": "RDP",
+				"capturedocrtext": "-I-"
+			}
+	]
+}
