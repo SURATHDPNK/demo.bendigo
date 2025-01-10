@@ -1,0 +1,20 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- main
+
+pool:
+  name: Training
+
+steps:
+- task: eggplant-runner@2
+  inputs:
+    daiVersion: '7.5.0-9'
+    serverURL: 'http://localhost:8000/'
+    testConfig: 'ById'
+    testConfigID: '2c0f7e95-b1b4-40d1-816e-e27e83ea8d6d'
+    clientID: 'client:dai:api:integration:557ea19b-5358-415d-948c-bf459a53dd73'
+    clientSecret: 'PSd77M17hp6fnGcANqUeTin6gMCF6RPT'
